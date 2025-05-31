@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="task_1.css">
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container nav">
+            <div class="logo">LANDING PAGE</div>
+            <nav>
+                <a href="#">Home</a>
+                 <a href="#about">About Us</a>
+                <a href="#services">Services</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h1>Creative Digital Agency</h1>
+            <p>We provide the best digital solutions for your business growth.</p>
+            <button onclick="handleAction('readMore')">Read More</button>
+            <button onclick="handleAction('consult')">Request A Consult</button>
+        </div>
+    </section>
+
+    <section class="features">
+        <div>
+            <h3>Launch Business</h3>
+            <p>Kickstart your startup with our expert services.</p>
+        </div>
+        <div>
+            <h3>Online Support Team</h3>
+            <p>24/7 support for all your needs.</p>
+        </div>
+        <div>
+            <h3>Time Management</h3>
+            <p>Efficient project delivery, always on time.</p>
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <div class="container">
+            <h2>About Us</h2>
+            <p>15 years, we passionate about achieving better results for our clients.</p>
+            <img src="about_us.jpg" alt="About Us Image">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla aliquet, justo a feugiat tincidunt.</p>
+            <button onclick="handleAction('readMore')">Read More</button>
+        </div>
+    </section>
+
+    <section class="services" id="services">
+        <div class="container">
+            <h2>Our Services</h2>
+            <div class="service-boxes">
+                <div class="service-box">
+                    <img src="user_experience.jpg" alt="User Experience">
+                    <h4>User Experience</h4>
+                </div>
+                <div class="service-box">
+                    <img src="design.jpg" alt="Creative Design">
+                    <h4>Creative Design</h4>
+                </div>
+                <div class="service-box">
+                    <img src="2.jpg" alt="Retina Ready">
+                    <h4>Retina Ready</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <form class="contact-form">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea rows="5" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Landing Page. All rights reserved.</p>
+    </footer>
+
+    <script src="task_1.js"></script>
+</body>
+</html>
